@@ -1,7 +1,7 @@
 # TODO: Change the name of the org 
 org: brooksd
-app: serverless-uda-todo
-service: serverless-uda-todo
+app: serverless-uda-todo-city
+service: serverless-uda-todo-city
 
 plugins:
   - serverless-webpack
@@ -24,9 +24,9 @@ provider:
   # Use these variables in the functions and resouorces section below. For example, 
   # ${self:provider.environment.ATTACHMENT_S3_BUCKET}
   environment:
-    PROJECT_NAME: uda-todo-serveless
-    TODOS_TABLE: uda-todo-serverless-${self:provider.stage}
-    S3_BUCKET_NAME: uda-todo-serverless-${self:provider.stage}
+    PROJECT_NAME: uda-todo-serveless-city
+    TODOS_TABLE: uda-todo-serverless-city-${self:provider.stage}
+    S3_BUCKET_NAME: uda-todo-serverless-city-${self:provider.stage}
 
 
 custom:
